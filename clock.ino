@@ -12,6 +12,9 @@ void update_clock(void) {
     hrs = 0;
   }
 
+  // write current time values to EEPROM
+  write_time_to_EEPROM();
+
   // output current time
   char clock_buf[16];
   sprintf(clock_buf, "%02u:%02u:%02u", hrs, mins, secs);
