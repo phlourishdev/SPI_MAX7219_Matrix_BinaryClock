@@ -5,7 +5,7 @@
 
 static HardwareTimer timer2 = HardwareTimer(TIM2);
 
-int secs = 21, mins = 21, hrs = 21;
+int secs, mins, hrs;
 int time_segments[ELEMENT_AMOUNT];
 
 void ISR_Timer2(void) {
