@@ -18,7 +18,7 @@ void init_MAX7219(void) {
 }
 
 // row (of the matrix) includes the MSB,
-// column (of the matrix) the LSB
+// column (of the matrix) includes the LSB
 void send_to_MAX7219(unsigned char row, unsigned char column) {
   // write to SPI bus
   digitalWrite(CS, LOW);

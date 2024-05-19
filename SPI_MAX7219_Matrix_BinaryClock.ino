@@ -48,6 +48,10 @@ void setup() {
 }
 
 void loop() {
+  if (Serial.available() > 0) {
+    set_time();
+  }
+
   // display hours
   send_to_MAX7219(0x01, time_segments[0]);
   send_to_MAX7219(0x02, time_segments[1]);
