@@ -11,7 +11,7 @@ To set the time, use the following command through the serial monitor.
 ```shell
 set HH:MM:SS
 ```
-For example, for 10 hours, 37 minutes, and 49 seconds, you would use the following
+For example, for 10 hours, 37 minutes, and 49 seconds, you would use the following.
 ```shell
 set 10:37:49
 ```
